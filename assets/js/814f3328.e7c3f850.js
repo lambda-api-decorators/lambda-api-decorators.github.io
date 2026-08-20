@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkcalra_docs=globalThis.webpackChunkcalra_docs||[]).push([[472],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/blog/welcome","unlisted":false}]}')}}]);

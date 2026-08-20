@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkcalra_docs=globalThis.webpackChunkcalra_docs||[]).push([[616],{5205(a){a.exports=JSON.parse('{"tags":[{"label":"hello","permalink":"/blog/tags/hello","count":1},{"label":"docusaurus","permalink":"/blog/tags/docusaurus","count":1}]}')}}]);

@@ -1,0 +1,24 @@
+"use strict";(globalThis.webpackChunkcalra_docs=globalThis.webpackChunkcalra_docs||[]).push([[583],{7251(e,s,t){t.r(s),t.d(s,{default:()=>R});var r=t(4164),n=t(8774),a=t(4586),o=t(1123);const i="usage_UZY2",l="usageRow_uz_Q",c="usageSection_PFTD",d="docsLink_Ygm1";var u=t(1656);function m(e){const s=(Array.isArray(e)?e:[e]).flatMap((e=>e.split("\n"))),t=function(e){return(""===e[0]?e[1]:e[0]).match(/^\s*/)[0].length}(s);return s.map((e=>e.slice(Math.max(0,t)))).join("\n").trim()}var h=t(6540),j=t(5556),p=t.n(j);function b(){return b=Object.assign||function(e){for(var s=1;s<arguments.length;s++){var t=arguments[s];for(var r in t)Object.prototype.hasOwnProperty.call(t,r)&&(e[r]=t[r])}return e},b.apply(this,arguments)}function g(e,s){if(null==e)return{};var t,r,n=function(e,s){if(null==e)return{};var t,r,n={},a=Object.keys(e);for(r=0;r<a.length;r++)t=a[r],s.indexOf(t)>=0||(n[t]=e[t]);return n}(e,s);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(r=0;r<a.length;r++)t=a[r],s.indexOf(t)>=0||Object.prototype.propertyIsEnumerable.call(e,t)&&(n[t]=e[t])}return n}var x=(0,h.forwardRef)((function(e,s){var t=e.color,r=void 0===t?"currentColor":t,n=e.size,a=void 0===n?24:n,o=g(e,["color","size"]);return h.createElement("svg",b({ref:s,xmlns:"http://www.w3.org/2000/svg",width:a,height:a,viewBox:"0 0 24 24",fill:"none",stroke:r,strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},o),h.createElement("line",{x1:"5",y1:"12",x2:"19",y2:"12"}),h.createElement("polyline",{points:"12 5 19 12 12 19"}))}));x.propTypes={color:p().string,size:p().oneOfType([p().string,p().number])},x.displayName="ArrowRight";const f=x;var v=t(4848);function y(){return(0,v.jsxs)("section",{className:i,children:[(0,v.jsx)("hr",{}),(0,v.jsx)("div",{className:"container--small",children:(0,v.jsxs)("div",{className:(0,r.A)("row",l),children:[(0,v.jsxs)("div",{className:c,children:[(0,v.jsx)("h2",{children:"Install dependencies"}),(0,v.jsx)(u.A,{language:"bash",children:m`
+                pip install calra-cdk calra-lambda
+              `}),(0,v.jsx)("p",{className:d,children:(0,v.jsxs)(n.A,{to:"/docs/getting-started/",children:["Getting Started ",(0,v.jsx)(f,{size:"1.25em"})]})})]}),(0,v.jsxs)("div",{className:c,children:[(0,v.jsx)("h2",{children:"Stack-side define Builder instance and build options"}),(0,v.jsx)(u.A,{language:"js",children:m`
+              from calra_cdk import ResourceBuilder
+
+              builder = ResourceBuilder()
+              builder.set_default_timeout(Duration.Seconds(10))
+              builder.add_custom_environment("DB_PORT",30001)
+
+              builder.build()
+            `}),(0,v.jsx)("p",{className:d,children:(0,v.jsxs)(n.A,{to:"/docs/cdk/about",children:["Resource Builder ",(0,v.jsx)(f,{size:"1.25em"})]})})]}),(0,v.jsxs)("div",{className:c,children:[(0,v.jsx)("h2",{children:"Personalize Lambda Functions"}),(0,v.jsx)(u.A,{language:"js",children:m`
+              from calra_lambda import *
+              import json
+
+              @GET('/dogs')
+              def lambda_handler(event, context):
+                  response = {
+                      'statusCode': 200,
+                      'body': json.dumps({
+                          'message': 'Hello World from /dogs!'
+                      })
+                  }
+                  return response
+            `}),(0,v.jsx)("p",{className:d,children:(0,v.jsxs)(n.A,{to:"/docs/lambda/about",children:["More about Decorators ",(0,v.jsx)(f,{size:"1.25em"})]})})]})]})})]})}const _="heroBanner_qdFl",N="heroBannerContainer_Q96R",A="heroSubtitle_jFu1",k="textContainer_n5O4",w="buttons_AeoN",O="buttonGroup__2Xv",C="supportButton_VQHI";function B(){const{siteConfig:e}=(0,a.A)();return(0,v.jsx)("header",{className:(0,r.A)("hero hero--primary",_),children:(0,v.jsxs)("div",{className:(0,r.A)("container",N),children:[(0,v.jsx)("img",{src:"/img/logo.svg",className:"container-logo",alt:""}),(0,v.jsxs)("div",{className:k,children:[(0,v.jsx)("h1",{className:"hero__title",children:e.title}),(0,v.jsx)("p",{className:A,children:e.tagline}),(0,v.jsxs)("div",{className:w,children:[(0,v.jsxs)("div",{className:O,children:[(0,v.jsx)(n.A,{className:"button button--primary button--lg",to:"/docs/introduction",children:"Getting Started"}),(0,v.jsx)(n.A,{className:"button button--secondary button--lg",to:"/docs/category/cdk-package",children:"Calra CDK"})]}),(0,v.jsxs)("div",{className:O,children:[(0,v.jsx)(n.A,{className:"button button--secondary button--lg",to:"/docs/category/lambda-package",children:"Calra Lambda"}),(0,v.jsx)(n.A,{className:(0,r.A)("button button--secondary button--lg",C),to:"https://github.com/cdk-ast-lambda-rest-api/calra-example-simple",children:"GitHub"})]})]})]})]})})}function R(){const{siteConfig:e}=(0,a.A)();return(0,v.jsxs)(o.A,{title:`${e.title}`,description:"CDK Rest API made easy",children:[(0,v.jsx)(B,{}),(0,v.jsx)("main",{children:(0,v.jsx)(y,{})})]})}}}]);

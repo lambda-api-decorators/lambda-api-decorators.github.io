@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkcalra_docs=globalThis.webpackChunkcalra_docs||[]).push([[310],{7310(t,c,o){function a(t,c){return t.documentsStore.get(t.data.docs,c)}function n(t){return t.documentsStore.count(t.data.docs)}o.d(c,{count:()=>n,getByID:()=>a})}}]);
